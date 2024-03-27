@@ -1,0 +1,112 @@
+.todo_item_description {
+    margin-bottom: 15px;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    font-size: var(--font-size-m);
+}
+
+.todo_item_task_title {
+    position: relative;
+    padding-right: 25px;
+    display: inline-block;
+    word-wrap: break-word;
+}
+
+.description_btn {
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-left: 3px solid var(--green);
+        border-bottom: 3px solid var(--green);
+        transform: rotate(-45deg);
+        border-radius: 2px;
+        transition: all 0.3s ease-in-out;
+
+    }
+}
+
+.description_btn_active {
+    span {
+        border-left: none;
+        border-bottom: none;
+        border-right: 3px solid var(--red);
+        border-top: 3px solid var(--red);
+        transform: rotate(-45deg) translate(-3px, 3px);
+
+    }
+}
+
+.todo_item_description_active {
+    display: block;
+    height: auto;
+    opacity: 1;
+
+}
+
+.todo_item_button_container {
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+    margin-bottom: 15px;
+
+}
+
+.todo_item_checked {
+    text-decoration: line-through !important;
+
+    h4 {
+        text-decoration: line-through !important;
+
+    }
+}
+
+.todo_item_task_container {
+    padding: 10px 0px;
+}
+
+.todo_item_task_label {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 30px;
+}
+
+.checkBox {
+    position: absolute;
+    border: 1px solid #00B7EC;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: white;
+    top: 2px;
+    left: 0;
+    z-index: 3;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        border: 1px solid rgb(178, 117, 43);
+    }
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked+.checkBox {
+    border: 1px solid var(--green);
+    background-image: url('./assets/img/check.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}

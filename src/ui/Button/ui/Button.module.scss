@@ -1,0 +1,80 @@
+.Button {
+    padding: 5px 14px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: var(--font-size-m);
+    cursor: pointer;
+    font-weight: 400;
+    height: 40px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+
+        box-shadow: 3px 3px 4px 1px rgba(34, 60, 80, 0.59);
+    }
+}
+
+.Button:disabled {
+    color: grey;
+    border: gray;
+    background-color: white;
+    border-bottom: 1px solid gray;
+
+    &:active {
+        color: grey;
+        border-bottom: 1px solid gray;
+        background-color: white;
+    }
+}
+
+.clear-blue {
+    background-color: white;
+    color: #00B7EC;
+    border-bottom: 1px solid #00B7EC;
+
+
+    &:active {
+        background-color: #00B7EC;
+        color: white;
+        border-bottom: 1px solid white;
+    }
+}
+
+.clear-green {
+    background-color: white;
+    border-bottom: 1px solid #9BCC37;
+    color: #9BCC37;
+
+    &:active {
+        background-color: #9BCC37;
+        color: white;
+    }
+
+    &:hover {}
+}
+
+.green {
+    background-color: #9BCC37;
+    color: white;
+    border-bottom: 1px solid white;
+
+    &:active {
+        background-color: white;
+        color: #9BCC37;
+        border-bottom: 1px solid #9BCC37;
+
+    }
+}
+
+.blue {
+    background-color: #00B7EC;
+    color: white;
+
+    &:active {
+        background-color: white;
+        color: #00B7EC;
+        border: 1px solid #00B7EC;
+
+    }
+}

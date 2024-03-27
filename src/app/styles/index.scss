@@ -1,0 +1,36 @@
+@import './reset.scss';
+@import './variables.scss';
+
+body {
+  font: var(--font-l);
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.app {
+  min-height: 100vh;
+
+
+}
+
+.content-page {
+  display: flex;
+
+}
+
+.page-wrapper {
+  flex-grow: 1;
+}
+
+.content {
+  max-width: 1280px;
+  min-width: 330px;
+  margin: 0 auto;
+  padding: 0 5px;
+
+  @media (min-width: 750px) {
+    padding: 0 10px;
+
+  }
+
+}

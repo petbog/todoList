@@ -1,0 +1,14 @@
+.Header {
+    background-color: var(--bg-color-content);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.Header_container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}

@@ -1,0 +1,73 @@
+.TodoList {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    justify-content: center;
+    align-items: baseline;
+
+    @media(min-width: 600px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media(min-width: 900px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+.select {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 0 -5px 10px;
+
+    @media (min-width: 600px) {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    input {
+        padding-bottom: 7px;
+    }
+
+    input::placeholder {
+        letter-spacing: 2px;
+        font: var(--font-l);
+        text-align: center;
+
+        @media (min-width: 600px) {
+            text-align: left;
+        }
+    }
+
+    span {
+        padding: 15px 5px;
+        cursor: pointer;
+        background-color: var(--bg-color-content);
+        opacity: 0.5;
+        transition: all 0.5s ease-in-out;
+
+
+        &:last-child {
+            border-radius: 0px 0px 10px 0px;
+
+        }
+
+        &:first-child {
+            border-radius: 0px 0px 0px 10px;
+
+            @media(max-width: 700px) {
+                border-radius: 0px 0px 0px 0px;
+
+            }
+        }
+
+        &.active {
+            opacity: 1;
+        }
+
+    }
+
+}

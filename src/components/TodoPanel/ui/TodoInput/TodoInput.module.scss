@@ -1,0 +1,18 @@
+.TodoInput {}
+
+.TodoInput:nth-child(odd) {
+    background-color: var(--bg-color-content);
+
+    input {
+        background-color: var(--bg-color-content);
+    }
+
+    color: white;
+    opacity: 0.98;
+}
+
+.field_container {
+    width: 100%;
+
+    label {}
+}
