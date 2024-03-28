@@ -53,7 +53,7 @@ export const TodoList = () => {
                         onClick={() => selectItem(obj)}
                     >{obj.name}
                     </span>)}
-                {/* {select.sortProperty === "new" && <Search />} */}
+                {select.sortProperty === "new" && <Search />}
             </div>
             <div className={cls.TodoList}>
 
