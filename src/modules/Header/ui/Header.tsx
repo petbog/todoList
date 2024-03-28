@@ -6,7 +6,7 @@ import { Button, ButtonTheme } from '../../../ui/Button/ui/Button';
 import { editCloseSet, modalIsOpenSet, selectIsOpenModal } from '../../../ReduxStore/slices/ModalSlice';
 import { useSelector } from 'react-redux';
 import { useAppDispatch } from '../../../ReduxStore/store';
-import { updateTodo } from '../../TodoList/ui/slice/TodoSlice';
+
 interface HeaderProps {
 }
 export const Header = ({ }: HeaderProps) => {
@@ -26,7 +26,7 @@ export const Header = ({ }: HeaderProps) => {
             <header className='content'>
                 <div className={cls.Header_container}              >
                     <Button
-                        theme={ButtonTheme.BLUE}
+                        theme={ButtonTheme.GREEN}
                         onClick={onToggleModal}
                     >
                         Новая задача
